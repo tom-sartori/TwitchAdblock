@@ -2,7 +2,7 @@
 const iframes = document.querySelectorAll("iframe");
 
 // Filter iframes that have a title that match one of the following regexes.
-const regex = [/.*Google Docs.*/];
+const regex = [/.*Afficher publicité.*/];
 const filteredIframes = Array.from(iframes).filter(iframe => {
     return regex.some(r => r.test(iframe.title));
 });
