@@ -1,5 +1,5 @@
 // Try to remove ads every 5 seconds.
-setInterval(removeAds, 5000);
+window.setInterval(removeAds, 5000);
 
 // Check if there is ads on the current page. If so, remove them.
 function removeAds() {
