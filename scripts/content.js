@@ -7,7 +7,7 @@ function removeAds() {
     const iframes = document.querySelectorAll("iframe");
 
 // Filter iframes that have a title that match one of the following regexes.
-    const regexes = [/.*Afficher publicité.*/];
+    const regexes = [/.*publicité*/];
     const filteredIframes = Array.from(iframes).filter(iframe => {
         return regexes.some(r => r.test(iframe.title));
     });
